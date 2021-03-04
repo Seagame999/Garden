@@ -120,13 +120,24 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\GardenController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ListController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Img\Home\1.jpg" />
+    <Content Include="Content\Img\Home\4.jpg" />
+    <Content Include="Content\Img\Home\3.jpg" />
+    <Content Include="Content\Img\Home\2.jpg" />
+    <Content Include="Content\Img\Home\5.JPG" />
+    <Content Include="Content\Img\Home\6.jpg" />
     <Content Include="css\animate.css" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -161,7 +172,9 @@
     <Content Include="images\icon3.png" />
     <Content Include="images\icon4.png" />
     <Content Include="images\loading.gif" />
+    <Content Include="images\logo-footer.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\logo4.png" />
     <Content Include="images\owl.video.play.png" />
     <Content Include="images\page-heading-about.jpg" />
     <Content Include="images\pattern\transparent-grid1.png" />
@@ -247,13 +260,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
@@ -282,6 +292,14 @@
     <Content Include="images\Thumbs.db" />
     <Content Include="js\.DS_Store" />
     <None Include="packages.config" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\List\OurTeam.cshtml" />
+    <Content Include="Views\List\PopularWord.cshtml" />
+    <Content Include="Views\List\FAQ.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Garden\Gardens.cshtml" />
+    <Content Include="Views\Garden\Garden1.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

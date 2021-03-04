@@ -6,8 +6,9 @@ using System.Web.Mvc;
 
 namespace Garden.Controllers
 {
-    public class HomeController : Controller
+    public class ServicesController : Controller
     {
+        // GET: Services
         public ActionResult Index()
         {
             return View();

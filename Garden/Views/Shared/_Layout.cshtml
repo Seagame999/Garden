@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>EcoBiz WebApplication</title>
 
     <!-- Site Properties -->
     <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" href="~/images/apple-touch-icon.png">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    @*<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">*@
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="~/css/bootstrap.min.css" />
@@ -32,7 +33,7 @@
             <header class="impx-header p-lg-4 px-3 pt-3 pb-0">
                 <div class="row">
                     <div class="col-lg-3 col-12">
-                        <a href="@Url.Action("Index","Home")"><img src="~/images/logo.png" alt="Logo" /></a>
+                        <a href="@Url.Action("Index","Home")"><img src="~/images/logo4.png" alt="Logo">&nbsp;&nbsp;&nbsp;สมาร์ทฟาร์ม.คอม</a>
                     </div>
                     <div class="col-lg-9 col-12">
                         <div class="impx-nav">
@@ -45,46 +46,27 @@
                                 <!-- Nav Items -->
                                 <div class="collapse navbar-collapse" id="nav-menu">
                                     <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item active dropdown">
-                                            <a class="nav-link dropdown-toggle" href="index.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Home <span class="sr-only">(current)</span>
-                                            </a>
-                                            <!-- Dropdown Items -->
-                                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                                <a class="dropdown-item" href="index.html">Homepage 1 (Classic)</a>
-                                                <a class="dropdown-item" href="index2.html">Homepage 2 (Modern)</a>
-                                                <a class="dropdown-item" href="index3.html">Homepage 3 (Alternative)</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Index","Home")">หน้าแรก</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Index","About")">เกี่ยวกับเรา</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Index","Services")">บริการ</a></li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">รายการ</a>
                                             <!-- Dropdown Items -->
                                             <div class="dropdown-menu" aria-labelledby="dropdown02">
-                                                <a class="dropdown-item" href="pricing.html">Pricing</a>
-                                                <a class="dropdown-item" href="team.html">Team</a>
-                                                <a class="dropdown-item" href="team-detail.html">Team Profile</a>
-                                                <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                                                <a class="dropdown-item" href="faq.html">FAQ</a>
-                                                <a class="dropdown-item" href="single-post.html">Single Post</a>
-                                                <a class="dropdown-item" href="left-sidebar.html">Left Sidebar</a>
+                                                <a class="dropdown-item" href="@Url.Action("OurTeam","List")">ทีมของเรา</a>
+                                                <a class="dropdown-item" href="@Url.Action("PopularWord","List")">คำนิยมจากเจ้าของสวน</a>
+                                                <a class="dropdown-item" href="@Url.Action("FAQ","List")">คำถามที่พบบ่อย</a>
                                             </div>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">สวนที่ใช้บริการ</a>
                                             <!-- Dropdown Items -->
                                             <div class="dropdown-menu" aria-labelledby="dropdown03">
-                                                <a class="dropdown-item" href="portfolio-4.html">4 Columns</a>
-                                                <a class="dropdown-item" href="portfolio-3.html">3 Columns</a>
-                                                <a class="dropdown-item" href="portfolio-2.html">2 Columns</a>
-                                                <a class="dropdown-item" href="portfolio-1.html">1 Column</a>
-                                                <a class="dropdown-item" href="portfolio-filter.html">Filterable</a>
-                                                <a class="dropdown-item" href="portfolio-detail.html">Detail Page</a>
+                                                <a class="dropdown-item" href="@Url.Action("Garden1","Garden")">สวนน้องโอม เกาะขันธ์ ชะอวด</a>
+                                                <a class="dropdown-item" href="@Url.Action("Gardens","Garden")">สวนทั้งหมด</a>
                                             </div>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Index","Contact")">ติดต่อ</a></li>
                                     </ul>
                                 </div>
                                 <!-- Nav Items End -->
@@ -108,13 +90,13 @@
                     <div class="col-lg col-sm-6">
                         <!-- Footer Widget 1 -->
                         <div class="footer-widget mb-lg-3 mb-sm-4 mb-3">
-                            <h5 class="text-white">Economy</h5>
+                            <h5 class="text-white">คำสำคัญ</h5>
                             <ul>
-                                <li><a href="#">Quo invento omnis ab quadam </a></li>
-                                <li><a href="#">bono et malo disputatio</a></li>
-                                <li><a href="#">Ergo infelix una molestia improbis </a></li>
-                                <li><a href="#">Morbo gravissimo ipsum affectus</a></li>
-                                <li><a href="#">Stoici dicunt, semper tibi</a></li>
+                                <li><a href="#">1.#</a></li>
+                                <li><a href="#">2.#</a></li>
+                                <li><a href="#">3.#</a></li>
+                                <li><a href="#">4.#</a></li>
+                                <li><a href="#">5.#</a></li>
                             </ul>
                         </div>
                         <!-- Footer Widget 1 End -->
@@ -122,13 +104,13 @@
                     <div class="col-lg col-sm-6">
                         <!-- Footer Widget 2 -->
                         <div class="footer-widget mb-lg-3 mb-sm-4 mb-3">
-                            <h5 class="text-white">Categories</h5>
+                            <h5 class="text-white">เว็บไซต์ที่เกี่ยวข้อง</h5>
                             <ul>
-                                <li><a href="#">Quo invento omnis ab quadam </a></li>
-                                <li><a href="#">bono et malo disputatio</a></li>
-                                <li><a href="#">Ergo infelix una molestia improbis </a></li>
-                                <li><a href="#">Morbo gravissimo ipsum affectus</a></li>
-                                <li><a href="#">Stoici dicunt, semper tibi</a></li>
+                                <li><a href="#">1.#</a></li>
+                                <li><a href="#">2.#</a></li>
+                                <li><a href="#">3.#</a></li>
+                                <li><a href="#">4.#</a></li>
+                                <li><a href="#">5.#</a></li>
                             </ul>
                         </div>
                         <!-- Footer Widget 2 End -->
@@ -136,12 +118,11 @@
                     <div class="col-lg col-sm-6">
                         <!-- Footer Widget 3 -->
                         <div class="footer-widget mb-lg-3 mb-sm-4 mb-3">
-                            <h5 class="text-white">Our Address</h5>
+                            <h5 class="text-white">ติดต่อ</h5>
                             <ul>
-                                <li>Jln. Damai menuju Syurga No. 14,Jakarta 20035,Indonesia</li>
-                                <li>Phone : +62 525625</li>
-                                <li>Email : <a href="mailto:">info@mydomain.com</a></li>
-                                <li>Web : <a href="#">http://www.mydomain.com</a></li>
+                                <li>....</li>
+                                <li>โทรศัพท์ : </li>
+                                <li>อีเมล์ : <a href="mailto:"></a></li>
                             </ul>
                         </div>
                         <!-- Footer Widget 3 End -->
@@ -149,14 +130,11 @@
                     <div class="col-lg col-sm-6">
                         <!-- Footer Widget 4 -->
                         <div class="footer-widget mb-lg-3 mb-sm-4 mb-3">
-                            <img src="~/images/footer-logo.png" alt="footer logo" class="mb-lg-3 mb-3">
-                            <p class="mb-2">Nihilne te delectat umquam -video, quicum loquar-, te igitur, Torquate, ipsum per se nihil delectat? Sin laboramus, quis est, qui alienae? </p>
+                            <img src="~/images/logo-footer.png" alt="footer logo" class="mb-lg-3 mb-3">
+                            <p class="mb-2">สมาร์ทฟาร์ม.คอม</p>
                             <ul class="social-profile">
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
                             </ul>
                         </div>
                         <!-- Footer Widget 4 End -->
@@ -170,17 +148,16 @@
                     <div class="col-lg-8  col-sm-12 col-12 ">
                         <!-- Footer Nav -->
                         <ul class="footer-nav mb-lg-0 ml-2 mb-2">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="@Url.Action("Index","Home")">หน้าแรก</a></li>
+                            <li><a href="@Url.Action("Index","About")">เกี่ยวกับเรา</a></li>
+                            <li><a href="@Url.Action("Index","Services")">บริการ</a></li>
+                            <li><a href="@Url.Action("Index","Contact")">ติดต่อ</a></li>
                         </ul>
                         <!-- Footer Nav End -->
                     </div>
                     <div class="col-lg-4 col-sm-12 col-12 pb-1">
                         <!-- Site Copyright -->
-                        <p class="site-copyright m-0 mr-2">&copy; 2021 <a href="https://www.facebook.com/compilehouse">Develop by Compile House</a></p>
+                        <p class="site-copyright m-0 mr-2">&copy; 2021 <a href="https://www.facebook.com/compilehouse">พัฒนาโดย [ Compile House ]</a></p>
                         <!-- Site Copyright End -->
                     </div>
                 </div>

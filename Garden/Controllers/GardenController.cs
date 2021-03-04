@@ -6,9 +6,15 @@ using System.Web.Mvc;
 
 namespace Garden.Controllers
 {
-    public class HomeController : Controller
+    public class GardenController : Controller
     {
-        public ActionResult Index()
+        // GET: Garden
+        public ActionResult Gardens()
+        {
+            return View();
+        }
+
+        public ActionResult Garden1()
         {
             return View();
         }
