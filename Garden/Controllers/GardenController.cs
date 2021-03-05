@@ -14,7 +14,20 @@ namespace Garden.Controllers
             return View();
         }
 
+        //สวนโอม
         public ActionResult Garden1()
+        {
+            return View();
+        }
+
+        //สวนป้านีย์
+        public ActionResult Garden2()
+        {
+            return View();
+        }
+
+        //สวนลำยอง
+        public ActionResult Garden3()
         {
             return View();
         }

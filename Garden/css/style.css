@@ -10,7 +10,7 @@
 
 body {
     /*font-family: 'Roboto', Arial, sans-serif;*/
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     color: #686868;
     font-size: .9rem;
     line-height: 1.6;
@@ -20,7 +20,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     /*font-family: 'Source Sans Pro', sans-serif;*/
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     font-weight: 300;
     color: #3c3c3c;
 }
@@ -441,7 +441,7 @@ a, .btn-link {
         padding-left: 1rem;
         color: #5b5b5b;
         /*font-family: 'Source Sans Pro', sans-serif;*/
-        font-family: 'Sarabun', sans-serif;
+        font-family: 'Chakra Petch', sans-serif;
         font-weight: 300;
         font-size: 1.05rem;
     }
@@ -459,7 +459,7 @@ a, .btn-link {
         border-bottom: 1px solid rgb(255, 255, 255,1);
         border-top: 1px solid rgb(0, 0,0,0.03);
         /*font-family: 'Source Sans Pro', sans-serif;*/
-        font-family: 'Sarabun', sans-serif;
+        font-family: 'Chakra Petch', sans-serif;
         font-weight: 300;
     }
 
@@ -1251,3 +1251,6 @@ a, .btn-link {
     text-align: right
 }
 
+a.nav-link {
+    font-family: 'Chakra Petch', sans-serif;
+}
